@@ -5,6 +5,7 @@
 </head>
 <body>
 	<h1>Register</h1>
+	<!-- I am using the action tag to send this request to a webserver hosted on a machine on the local netwrok -->
 	<form name="register" action="http://192.168.0.8:8080" method="GET">
 		<label for="firstName">First Name:</label>
 		<input type="text" name="firstName" id="firstName" required="" placeholder="First Name">
@@ -12,54 +13,50 @@
 		<label for="lastName">Last Name:</label>
 		<input type="text" name="lastName" id="lastName" required="" placeholder="Last Name">
 		
-		<br>
+		<div>
+			<label for="male">Male</label>
+			<input type="radio" name="gender" id="male" required="" value="MALE">
+
+			<label for="female">Female</label>
+			<input type="radio" name="gender" id="female" required="" value="FEMALE">
+		</div>
 		
-		<label for="male">Male</label>
-		<input type="radio" name="gender" id="male" required="" value="MALE">
+		<div>
+			<label for="email">Email: </label>
+			<input type="email" name="email" id="email" required="" placeholder="Email">
 
-		<label for="female">Female</label>
-		<input type="radio" name="gender" id="female" required="" value="FEMALE">
-
-		<br>
-
-		<label for="email">Email: </label>
-		<input type="email" name="email" id="email" required="" placeholder="Email">
-
-		<label for="password">Password: </label>
-		<input type="password" name="password" id="password" required="" placeholder="Password" minlength="5">
-
-		<br>
-
-		<label for="birthday">Birthday: </label>
-		<select name="month" required="" >
-			<option>Month</option>
-			<option>Jan</option>
-			<option>Feb</option>
-			<option>Mar</option>
-		</select>
-		<select name="day">
-			<option>Day</option>
-			<option>1</option>
-			<option>2</option>
-			<option>3</option>
-		</select>
-		<select name="year">
-			<option>Year</option>
-			<option>2018</option>
-			<option>2017</option>
-			<option>2016</option>
-		</select>
-
-		<br>
-
-		<label for="tos">I agree to the terms and conditions</label>
-		<input type="checkbox" name="tos" required="">
-
-		<br>
-
-		<input type="submit" name="Submit">
-
+			<label for="password">Password: </label>
+			<input type="password" name="password" id="password" required="" placeholder="Password" minlength="5">
+		</div>
+		<div>
+			<label for="birthday">Birthday: </label>
+			<select name="month" required="" >
+				<option>Month</option>
+				<option>Jan</option>
+				<option>Feb</option>
+				<option>Mar</option>
+			</select>
+			<select name="day">
+				<option>Day</option>
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+			</select>
+			<select name="year">
+				<option>Year</option>
+				<option>2018</option>
+				<option>2017</option>
+				<option>2016</option>
+			</select>
+		</div>
+		
+		<div>
+			<label for="tos">I agree to the terms and conditions</label>
+			<input type="checkbox" name="tos" required="">
+		</div>
+		<div>
+			<input type="submit" name="Submit">	
+		</div>
 	</form>
-
 </body>
 </html>
