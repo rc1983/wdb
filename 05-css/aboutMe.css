@@ -1,4 +1,4 @@
-h1
+/*h1
 {
 	color: purple;
 }
@@ -12,4 +12,30 @@ li
 {
 	color: orange;
 	text-align: center;
+}*/
+
+/*Hexadicimal uses RGB values. 
+123456789ABCDEF
+# (Two digits for red) (Two digits for green) (Two digits for blue)*/
+
+h1
+{
+	background: yellow;
+	color: #FEF0F0;
+}
+
+h4
+{
+	background: rgb(200,10,10);
+	color: rgb(0,255,255);
+}
+/*rgba is for transparency. The value is between 0 and 1*/
+li
+{
+	color: rgba(200,100,100,0.5);
+}
+body
+{
+	color: white;
+	background: black;
 }
