@@ -20,6 +20,7 @@ li
 
 h1
 {
+	/*background property is applied after the body background property*/
 	background: yellow;
 	color: #FEF0F0;
 }
@@ -37,5 +38,10 @@ li
 body
 {
 	color: white;
-	background: black;
+	/*background: black;*/
+	/*The image is tiled horizontally and vertically*/
+	background: url(woodgrain.jpg);
+	/*This property will prevent the image from being tiled*/
+	background-repeat: no-repeat;
+	background-size: cover;
 }
