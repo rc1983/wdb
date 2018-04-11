@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Todo List</title>
+	<link rel="stylesheet" type="text/css" href="todoList.css">
+</head>
+<body>
+
+	<h1>Todo List</h1>
+
+	<ul>
+		<div>
+			<li class="completed">
+				<!-- checked=true will keep the box checked when the page loads -->
+				<input type="checkbox" name="li1" checked="true">Task 1
+			</li>
+			<!-- The id should be unique. "speical" should not be used anywhere else in the html file
+			because its not valid HTML -->
+			<li id="special" class="completed">
+				<input type="checkbox" name="li2">Task 2
+			</li>
+		</div>
+		<li id="special2">
+			<input type="checkbox" name="li3">Task 3
+		</li>
+		<li>
+			<input type="checkbox" name="li4">Task 4
+	</ul>
+</body>
+</html>

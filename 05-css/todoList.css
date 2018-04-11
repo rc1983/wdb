@@ -1,0 +1,23 @@
+body
+{
+	background-color: grey;
+}
+
+li
+{
+	color: white;
+}
+#special
+{
+	background-color: red;
+}
+
+#special2
+{
+	color: #99ff66;
+}
+
+.completed
+{
+	text-decoration: line-through;
+}

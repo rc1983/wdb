@@ -21,7 +21,15 @@ li
 h1
 {
 	/*background property is applied after the body background property*/
-	background: yellow;
+	background: black;
+	/*border color, width and style all need to be defined for it to show*/
+	/*border-color: white;
+	border-width: 5px;
+	border-style:solid;*/
+
+	/*Alternative declaration for border. <color> <size> <style>*/
+	border: white 5px dotted;
+
 	color: #FEF0F0;
 }
 
@@ -33,7 +41,7 @@ h4
 /*rgba is for transparency. The value is between 0 and 1*/
 li
 {
-	color: rgba(200,100,100,0.5);
+	color: rgba(0,250,0,0.5);
 }
 body
 {
@@ -43,5 +51,6 @@ body
 	background: url(woodgrain.jpg);
 	/*This property will prevent the image from being tiled*/
 	background-repeat: no-repeat;
+	/*This property will make the pricture cover the entire background*/
 	background-size: cover;
 }
