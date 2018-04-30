@@ -1,11 +1,16 @@
-/*Different types of selectors we have seen so far - 
-Element
-li
+/* Different types of selectors we have seen so far -
+/* Element */
+/* li
 {
-	
+	color:grey;
 }
 
-class
+a
+{
+    color: crimson;
+} */
+
+/* class
 .hello
 {
 	
@@ -15,5 +20,49 @@ id
 #name
 {
 	
+}  */
+
+/* Star
+This selector will apply to all elements on the page.  */
+*
+{
+    border: 1px solid tomato;
 }
-*/
+
+/* Descendant Selector */
+/* Allows selecting only the anchor tags inside of an li element */
+/* Every anchor tag that is inside of an li that is inside of ul */
+ul li a
+{
+    font-style: italic;
+    color: red;
+}
+
+/* Adjacent Selector */
+/* This will select all ul elements that are adjacent to h4 */
+h4 + ul
+{
+    border: 4px solid red;
+}
+
+/* Attribute selector */
+/* This will allow selecting the particular attribute of an element.  */
+ a[href="https://www.duckduckgo.com"]
+ {
+     background: peru;
+ }
+ option[value="happy"]
+ {
+     background: rgb(226, 223, 11);
+ }
+ option[value="sad"]
+ {
+     background: blue;
+ }
+
+ /* nth of type */
+ /* This will select the 3rd li in the html document and apply the style to that element */
+ li:nth-of-type(3)
+ {
+     background: tan;
+ }
