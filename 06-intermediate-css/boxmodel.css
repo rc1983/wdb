@@ -1,0 +1,14 @@
+p
+{
+    /* width: 200px; */
+    width: 50%;
+    border: 2px solid blue;
+    padding: 10px;
+    padding-top: 30px;
+    text-align: justify;
+    /* top right bottom left */
+    /* margin: 100px 500px 100px 200px; */
+    /* margin-left: 20px;
+    margin-right: 20px; */
+    margin: 10px auto auto auto;
+}
