@@ -3,23 +3,47 @@
 <head>
 	<title>Tic Tac Toe</title>
 	<link rel="stylesheet" type="text/css" href="board.css">
+	<!-- <style type="text/css">
+		td
+			{
+				width: 100px;
+				height: 100px;
+				/* background:lightsteelblue; */
+			}
+		.vertical
+		{
+			border-left: 3px solid black;
+			border-right: 3px solid black;
+		}
+
+		.horizontal
+		{
+			border-top: 3px solid black;
+			border-bottom: 3px solid black;
+		}
+
+		table
+		{
+			margin: auto;
+		}
+	</style> -->
 </head>
 <body>
 	<h1>Tic Tac Toe</h1>
 	<table border="0" align="center">
-		<tr id="row1">
-			<td id="td1"></td>
+		<tr>
 			<td></td>
-			<td></td>
+			<td class="vertical"></td>
+			<td class="ho"></td>
+		</tr>
+		<tr>
+			<td class="horizontal"></td>
+			<td class="vertical horizontal"></td>
+			<td class="horizontal"></td>
 		</tr>
 		<tr>
 			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td></td>
+			<td class="vertical"></td>
 			<td></td>
 		</tr>
 	</table>
