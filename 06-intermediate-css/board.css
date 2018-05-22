@@ -1,0 +1,17 @@
+td
+{
+    width: 100px;
+    height: 100px;
+    border-right: 3px solid;
+    /* border-bottom: 3px solid; */
+}
+
+.bottomRow
+{
+    border-bottom: 3px solid;
+}
+
+h1
+{
+    text-align: center;
+}
