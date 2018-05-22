@@ -1,0 +1,11 @@
+img
+{
+    /* width: 100px; */
+    /* 30% specifies that each image should take up 30% of the space per row. We want to use 30% width because we want 3 images to fit in one line.  */
+    width: 30%;
+    /* height: auto; */
+    /* This property will get rid of the white space that html will add between the images and it will allow for the developer to control the space between the elements.  */
+    float: left;
+    margin: 1.66%;
+    object-fit: contain;
+}
