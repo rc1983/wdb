@@ -1,0 +1,39 @@
+.blogContent
+{
+    margin-left: 20%;
+    margin-right: 20%;
+    border: rgb(134, 134, 132) 2px solid;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify;
+}
+
+h2
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.date
+{
+    font-family: 'Raleway', sans-serif;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: rgb(79, 166, 196);
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+body
+{
+    background:rgb(50, 50, 50);
+    color: white;
+}
+
+hr 
+{
+  border: 0;
+  height: 0;
+  box-shadow: 0 0 10px 1px;
+}
