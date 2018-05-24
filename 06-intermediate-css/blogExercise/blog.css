@@ -1,0 +1,48 @@
+body
+{
+    border: 20px solid #bdc3c7;
+    padding: 20px;
+    /* Ensures that the body is no more than 700px */
+    max-width: 700px;
+    width: 80%;
+    /* This will allow the element to be centered.
+    top and bottom -> 0px; left and right -> auto */
+    margin: 20px auto;
+    /* font-family: 'Source Sans Pro', sans-serif; */
+    font-family: 'Raleway', sans-serif;
+}
+
+.quote
+{
+    border-left: 5px solid #bdc3c7;
+    padding-left: 5px;
+}
+
+.date
+{
+    font-weight: bold;
+    color: #3498db;
+    text-transform: uppercase;
+    /* rem is not set by the parent element, they are set by the root element of the page.  */
+    letter-spacing: 0.2rem;
+}
+
+h2
+{
+    color: #2c3e50;
+    font-size: 2.0rem;
+}
+
+/* Gradient transparent - color - transparent */
+
+hr
+{
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.post
+{
+    margin-bottom: 20px;
+}

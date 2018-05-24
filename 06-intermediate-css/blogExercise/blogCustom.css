@@ -1,10 +1,9 @@
 .blogContent
 {
-    margin-left: 20%;
+    /* margin-left: 20%;
     margin-right: 20%;
-    border: rgb(134, 134, 132) 2px solid;
     padding-left: 10px;
-    padding-right: 10px;
+    padding-right: 10px; */
     text-align: justify;
 }
 
@@ -12,6 +11,11 @@ h2
 {
     margin-top: 10px;
     margin-bottom: 10px;
+    font-family: 'Raleway', sans-serif;
+}
+
+h1
+{
     font-family: 'Raleway', sans-serif;
 }
 
@@ -23,17 +27,24 @@ h2
     color: rgb(79, 166, 196);
     text-transform: uppercase;
     font-weight: 800;
+    letter-spacing: 0.2rem;
 }
 
 body
 {
+    border: rgb(134, 134, 132) 2px solid;
+    /* font-family: 'Libre Franklin', sans-serif; */
     background:rgb(50, 50, 50);
     color: white;
+    max-width: 700px;
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
 }
 
-hr 
+hr
 {
-  border: 0;
-  height: 0;
-  box-shadow: 0 0 10px 1px;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(231, 223, 223, 0), rgba(230, 230, 230, 0.75), rgba(230, 230, 230, 0));
 }
