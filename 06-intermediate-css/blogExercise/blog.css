@@ -6,7 +6,7 @@ body
     max-width: 700px;
     width: 80%;
     /* This will allow the element to be centered.
-    top and bottom -> 0px; left and right -> auto */
+    top and bottom -> 20px; left and right -> auto */
     margin: 20px auto;
     /* font-family: 'Source Sans Pro', sans-serif; */
     font-family: 'Raleway', sans-serif;
