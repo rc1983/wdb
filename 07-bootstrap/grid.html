@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bootstrap Grid System</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<style type="text/css">
+		.divborder
+		{
+			border: solid 2px red;
+		}
+
+		.orange
+		{
+				border: dashed 1px red;
+				background: orange;
+		}
+
+	</style>
+</head>
+<body>
+	<h1>Grid demo</h1>
+	<p>How many units should each column take?</p>
+	<p>col-lg-2 -> This means that when the window is large, each column should take 2 units.</p>
+	<h2>Columns of equal width</h2>
+	<p>
+		4 columns - large;</br>
+		3 columns - medium;</br>
+		2 columns - small;</br>
+		1 column - extra small;</br>
+	</p>
+	<div class="container">This is the container div
+		<div class="row">
+			<div class="col-lg-2 col-md-4 col-sm-6 divborder">element 1</div>
+			<div class="col-lg-2 col-md-4 col-sm-6 divborder">element 2</div>
+			<div class="col-lg-2 col-md-4 col-sm-6 divborder">element 3</div>
+			<div class="col-lg-2 col-md-4 col-sm-6 divborder">element 4</div>
+			<div class="col-lg-2 col-md-4 col-sm-6 divborder">element 5</div>
+			<div class="col-lg-2 col-md-4 col-sm-6 divborder">element 6</div>
+			<div class="col-lg-2 col-md-4 col-sm-6 divborder">element 7</div>
+			<div class="col-lg-2 col-md-4 col-sm-6 divborder">element 8</div>
+			<div class="col-lg-2 col-md-4 col-sm-6 divborder">element 9</div>
+			<div class="col-lg-2 col-md-4 col-sm-6 divborder">element 10</div>
+			<div class="col-lg-2 col-md-4 col-sm-6 divborder">element 11</div>
+			<div class="col-lg-2 col-md-4 col-sm-6 divborder">element 12</div>
+			<div class="col-lg-2 col-md-4 col-sm-6 divborder">element 13</div>
+		</div>
+	</div>
+	<h2>Columns of unequal width</h2>
+	<p>
+		large - 3 columns - 2 - 8- 2; </br>
+		medium - 3 columns - 3 - 6 - 3;</br>
+		small - 3 columns - 4 - 4- 4;</br>
+		extra small - 2 columns - 6 - 6;</br>
+	</p>
+	<div class="container">This is the container div
+		<div class="row">
+			<div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 divborder">element 1</div>
+			<div class="col-lg-8 col-md-6 col-sm-4 col-xs-6 divborder">element 2</div>
+			<div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 divborder">element 3</div>
+		</div>
+	</div>
+	<h2>Nested rows</h2>
+	<p>
+		large - 3 columns - 3 - 3 - 3 - 3; </br>
+		medium - 3 columns - 3 - 3 - 3 - 3;</br>
+		small - 3 columns - 6 - 6;</br>
+		extra small - 1 column - 12;</br>
+	</p>
+	<div class="container">This is the container div
+		<div class="row">
+			<div class="col-lg-3 col-md-3 col-sm-6 divborder">element 1</div>
+			<div class="col-lg-3 col-md-3 col-sm-6 divborder">element 2</div>
+			<div class="col-lg-3 col-md-3 col-sm-6 divborder">element 3</div>
+			<div class="col-lg-3 col-md-3 col-sm-6 divborder">element 4</div>
+		</div>
+	</div>
+
+	<div class="container">This is the container div
+		<div class="row">
+			<div class="col-md-3 col-sm-6">
+				<!-- This is the nested part -->
+				<div class="row">
+					<div class="col-lg-6 orange">HALF 1</div>
+					<div class="col-lg-6 orange">HALF 2</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-6 divborder">element 2</div>
+			<div class="col-lg-3 col-md-3 col-sm-6 divborder">element 3</div>
+			<div class="col-lg-3 col-md-3 col-sm-6">
+				<div class="row">
+					<div class="col-lg-2 orange">1</div>
+					<div class="col-lg-2 orange">2</div>
+					<div class="col-lg-2 orange">3</div>
+					<div class="col-lg-2 orange">4</div>
+					<div class="col-lg-2 orange">5</div>
+					<div class="col-lg-2 orange">6</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
