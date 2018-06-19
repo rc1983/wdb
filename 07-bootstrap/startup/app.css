@@ -35,4 +35,5 @@ hr
     height: 2px;
     background-image: linear-gradient(to right, rgba(230, 220, 220, 0), rgba(230, 230, 230, 0.75), rgba(230, 230, 230, 0));
     width: 350px;
+    max-width: 90%;
 }
