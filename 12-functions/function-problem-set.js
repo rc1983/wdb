@@ -8,7 +8,7 @@ function evenNumberTest()
     {
         document.getElementById("evenNumberTest").innerHTML = input.value + " is not a number";
     }
-    else if (num % 2 == 0)
+    else if (num % 2 === 0)
     {
         document.getElementById("evenNumberTest").innerHTML = num + " is even.";
     }
@@ -49,6 +49,19 @@ function calculateFactorial(num)
 function kebabToSnake()
 {
     var input = document.getElementById("textArea").value;
-    input = input.replace("-", "_");
+    
+    input = input.replace(/-/g, "_");
     document.getElementById("switchedText").innerHTML = input;
+}
+
+// factorial using loops. call through console
+function factorialLoop(num)
+{
+    var result = 1;
+    for (var i = 2; i <= num; i++)
+    {
+        // result = result * i;
+        result *= i;
+    }
+    return result;
 }
