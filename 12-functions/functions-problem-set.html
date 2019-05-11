@@ -21,11 +21,21 @@
         Factorial test
     </p>
     <form>
-        <input type="text" name="fac" id="fac" placeholder="Enter a number">
+        <input type="text" name="factorialInput" id="factorialInput" placeholder="Enter a number">
     </form>
-    <input type="submit" name="fac" id="fac" onclick="fac()">
+    <input type="submit" name="submitFactorial" id="submitFactorial" onclick="getFactorial()">
     <p>
         <div id="fac"></div>
+    </p>
+    <p>
+        Change case
+    </p>
+    <form>
+        <input type="text" name="textArea" id="textArea" placeholder="Enter text here">
+    </form>
+    <input type="submit" name="textSubmit" id="textSubmit" onclick="kebabToSnake()">
+    <p>
+        <div id="switchedText"></div>
     </p>
 </body>
 </html>

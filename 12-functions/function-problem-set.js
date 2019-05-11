@@ -1,9 +1,9 @@
 function evenNumberTest()
 {
     var input = document.getElementById("numberInput");
-    
-    var num = Number(input.value);    
-    
+
+    var num = Number(input.value);
+
     if (num == "NaN") 
     {
         document.getElementById("evenNumberTest").innerHTML = input.value + " is not a number";
@@ -18,27 +18,23 @@ function evenNumberTest()
     }
 }
 
-// function fac()
-// {
-//     var input = document.getElementById("fac");
+function getFactorial()
+{
+    var input = document.getElementById("factorialInput");
 
-//     var num = Number(input.value);
+    var num = Number(factorialInput.value);
 
+    if (!(num == "NaN"))
+    {
+        document.getElementById("fac").innerHTML = "The factorial is: " + calculateFactorial(num);
+    }
+    else
+    {
+        document.getElementById("fac").innerHTML = input.value + " is not a number";
+    }
+}
 
-
-//     if (!(num == "NaN"))
-//     {
-//         document.getElementById("fac").innerHTML = "The factorial is: " + Math.;
-//     }
-//     else
-//     {
-//         document.getElementById("fac").innerHTML = input.value + " is not a number";
-//     }
-// }
-
-getFactorial(3)
-
-function getFactorial(num)
+function calculateFactorial(num)
 {
     if (num == 0)
     {
@@ -46,7 +42,13 @@ function getFactorial(num)
     }
     else
     {
-        console.log(num);
-        console.log(num * (getFactorial(num-1)));
+        return (num * calculateFactorial(num - 1));
     }
+}
+
+function kebabToSnake()
+{
+    var input = document.getElementById("textArea").value;
+    input = input.replace("-", "_");
+    document.getElementById("switchedText").innerHTML = input;
 }
