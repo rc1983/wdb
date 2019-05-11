@@ -32,3 +32,11 @@ function doSomething()
 }
 
 doSomething();
+
+function phrases() {
+    console.log("statement 1");
+    console.log("statement 2");
+}
+phrases();
+
+// setInterval(phrases, 5000);
