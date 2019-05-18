@@ -19,7 +19,7 @@ console.log("colors after push: " + colors);
 
 console.log("colors before pop: " + colors);
 var pop = colors.pop();
-// pop returns the last item in the array that is remoted
+// pop returns the last item in the array that is removed
 console.log("colors after pop: " + colors);
 console.log("pop: " + pop);
 

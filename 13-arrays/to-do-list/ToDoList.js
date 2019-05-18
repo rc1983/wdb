@@ -15,7 +15,7 @@ function beginToDoList()
         else if (input === "list") 
         {
             console.log("To do list: " + toDoList);
-            document.getElementById("list").innerHTML = toDoList;
+            document.getElementById("list").innerHTML = "To do list: " + toDoList;
             input = prompt("What would you like to do?");
         }
         else
