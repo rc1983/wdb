@@ -59,7 +59,7 @@ function listToDos()
 function deleteToDo()
 {
     var index = Number(prompt("Enter the index to delete."));
-    if(!index=="NaN" && (index < toDoList.length))
+    if(index != "NaN" && (index < toDoList.length))
     {
         console.log("Deleting the following element: " + toDoList[index]);
         // index of the element you want to delete, and the number elements to delete. 
