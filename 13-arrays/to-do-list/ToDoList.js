@@ -64,7 +64,8 @@ function deleteToDo()
         console.log("Deleting the following element: " + toDoList[index]);
         // index of the element you want to delete, and the number elements to delete. 
         // to delete only one element, use 1
-        toDoList.splice(index,1)
+        toDoList.splice(index,1);
+        listToDos();
     }
     else
     {
