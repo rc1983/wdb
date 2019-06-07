@@ -55,13 +55,13 @@ function enterElements()
 
 function item(element, index)
 {
-    console.log(element + "," + index);
+
 }
 
 function printReverse()
 {
     console.log("Printing the reverse of the array");
-    for (var i = items.length; i >= 0; i--)
+    for (var i = items.length-1; i >= 0; i--)
     {
         console.log(items[i]);
     }
@@ -69,7 +69,17 @@ function printReverse()
 
 function isUniform()
 {
-    // items.forEach(item);
+    var firstItem = items[0];
+    for (var i = 0; i < items.length; i++)
+    {
+        if (firstItem != items[i])
+        {
+            console.log(firstItem + " is not equal to " + items[i]);
+            return;
+        }
+    }
+
+    console.log("This is a uniform array");
 }
 
 function arraySum()
