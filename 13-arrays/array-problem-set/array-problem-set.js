@@ -28,6 +28,11 @@ function clickToBegin()
             arrayMax();
         }
 
+        else if (userInput == 5)
+        {
+            enterElements();
+        }
+
         else
         {
             console.log("Invalid input. Try again");
@@ -84,10 +89,27 @@ function isUniform()
 
 function arraySum()
 {
-    // items.forEach(item);
+    var total = 0;
+
+    for (var i = 0; i < items.length; i++)
+    {
+        total = total + Number(items[i]);
+    }
+
+    console.log("The sum of elements in the array: " + total);
 }
 
 function arrayMax()
 {
-    // items.forEach(item);
+    var max = 0;
+
+    for (var i = 0; i < items.length; i++)
+    {
+        if (max < Number(items[i]))
+        {
+            max = Number(items[i]);
+        }
+    }
+
+    console.log("The maximum value is: " + max);
 }
